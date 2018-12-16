@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name" translatable="false">SensorFollower</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="pause">Pause</string>
+
+    <string name="title_blood_glucose">Blood glucose level</string>
+    <string name="enter_blood_glucose">Enter manually measured blood glucose level:</string>
+
+    <string name="glucose_unit_mgdl" translatable="false">mg/dl</string>
+    <string name="glucose_unit_mmoll" translatable="false">mmol/l</string>
+
+    <string name="pref_general_settings">General</string>
+    <string name="pref_glucose_unit">Unit</string>
+    <string name="pref_glucose_unit_summary">Set the unit of measurement</string>
+    <string name="pref_glucose_target_area">Target Area</string>
+    <string name="pref_glucose_target_min">pref_glucose_target_min</string>
+    <string name="pref_glucose_target_max">pref_glucose_target_max</string>
+    <string name="name_glucose_target_min">Glucose Target Minimum</string>
+    <string name="name_glucose_target_max">Glucose Target Maximum</string>
+    <string name="name_glucose_unit_is_mmoll">Glucose Unit is mmol/L</string>
+
+    <string name="pref_rotation_lock">Rotation Lock</string>
+    <string name="pref_rotation_lock_sum">Keep portrait orientation</string>
+
+    <string name="pref_nfc_settings">NFC Scan</string>
+    <string name="pref_nfc_quick_scan">Fast Scan</string>
+    <string name="pref_nfc_quick_scan_summary">Does not work with all devices</string>
+
+    <string name="day">Day</string>
+    <string name="days">Days</string>
+    <string name="hour">Hour</string>
+    <string name="hours">Hours</string>
+    <string name="minute">Minute</string>
+    <string name="minutes">Minutes</string>
+
+    <string name="sensor_not_activated_yet">Sensor not activated, yet.</string>
+    <string name="sensor_ready_in">Sensor ready in %d Minutes.</string>
+    <string name="sensor_expired">Sensor expired.</string>
+    <string name="no_sensor_registered">No registered sensor currently active.</string>
+
+    <string name="scan_a_sensor">Scan a sensor</string>
+    <string name="tv_scan_sensor_advice">Scan sensor by holding the backside of your device against the sensor.</string>
+
+    <string name="reading_sensor">Reading…</string>
+    <string name="reading_sensor_success">Successfully read sensor.</string>
+    <string name="reading_sensor_not_ready">Sensor is not yet ready.</string>
+    <string name="reading_sensor_error">Error reading the sensor, please try again.</string>
+
+    <string name="error_nfc_device_not_supported">"This device doesn't support NFC."</string>
+    <string name="error_nfc_disabled">NFC is disabled, please enable in device settings.</string>
+
+    <string name="blood_glucose_estimation">BG estimation</string>
+    <string name="glucose_current_value" formatted="false">Subcutaneous glucose level: %s %s</string>
+
+    <string name="pref_glucose_unit_is_mmol">pref_glucose_unit_is_mmol</string>
+    <string name="pref_glucose_unit_is_mmol_summary">If checked, show glucose values in mmol/L otherwise in mg/dL.</string>
+    <string name="pref_nfc_use_multi_block_read">Use NFC Block Mode</string>
+    <string name="pref_nfc_use_multi_block_read_summary">Read sensor quicker in NFC multi-block mode (disable if you have problems reading the sensor).</string>
+
+
+    <!-- Strings constants for the app user interface -->
+    <string name="name_start_sensor_simulator">Start Sensor Simulator</string>
+    <string name="name_patient_mode">Patient mode</string>
+    <string name="name_caretaker_mode">Caretaker mode</string>
+    <string name="name_preferences">Preferences</string>
+    <string name="name_start_blaubot">Start Blaubot service</string>
+    <string name="name_stop_blaubot">Stop Blaubot service</string>
+    <string name="name_quit">Quit</string>
+    <string name="name_send_cyclic_data">Send cyclic sensor data</string>
+    <string name="name_type_in_a_sensor_value">Type in a sensor value</string>
+    <string name="name_data_display">Data display</string>
+    <string name="name_send_data">Send sensor data</string>
+    <string name="name_join_wlan">Join WLAN</string>
+    <string name="name_leave_wlan">Leave WLAN</string>
+    <string name="name_blood_sugar">Blood sugar: </string>
+    <string name="name_sensor_simulator">Sensor simulator</string>
+    <string name="name_caretaker">Caretaker</string>
+    <string name="name_patient">Patient</string>
+    <string name="name_emergency_call">Emergency Call</string>
+    <string name="name_connected_devices">Connected Devices:</string>
+    <string name="name_enter_user_name">First run, please enter your user name:</string>
+    <string name="name_value_range">Please choose your value range:</string>
+    <string name="name_settings">Settings</string>
+    <string name="name_cancel">Cancel</string>
+    <string name="name_ok">OK</string>
+    <string name="name_please_enter_user_name">User name cannot be empty. Please enter a name and set role.</string>
+    <string name="name_please_set_user_role_first">Cannot connect. Please set the user role first.</string>
+    <string name="name_hello">Hello</string>
+    <string name="name_user_name">Username</string>
+    <string name="name_user_role">Userrole</string>
+    <string name="name_minimum">Minimum</string>
+    <string name="name_maximum">Maximum</string>
+
+    <string name="key_device_name">DEVICE_NAME</string>
+    <string name="key_device_id">DEVICE_MAC_ADDRESS</string>
+    <string name="key_user_role">ROLE</string>
+    <string name="key_ip_address">IP_ADDRESS</string>
+    <string name="key_user_name">key_user_name</string>
+    <string name="key_first_run">key_first_run</string>
+    <string name="key_start_role">key_start_role</string>
+
+    <string name="shpref_app_preferences">shpref_app_preferences</string>
+
+    <string-array name="roles">
+        <item>Patient</item>
+        <item>Caretaker</item>
+        <item>Simulator</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SensorApp.MainActivity">
+    <!--group android:id="@+id/menu_group_preferences">
+        <item android:id="@+id/menu_sensor_simulator"
+            android:title="@string/name_sensor_simulator"></item>
+        <item android:id="@+id/menu_patient_mode"
+            android:title="@string/name_patient_mode"></item>
+        <item android:id="@+id/menu_caretaker_mode"
+            android:title="@string/name_caretaker_mode"></item>
+    </group/-->
+
+    <group>
+        <item android:id="@+id/menu_join_wlan"
+            android:title="@string/name_join_wlan"
+            app:showAsAction="always"
+            android:icon="@android:drawable/presence_online"/>
+        <item android:id="@+id/menu_leave_wlan"
+            android:title="@string/name_leave_wlan"
+            app:showAsAction="always"
+            android:icon="@android:drawable/presence_offline"/>
+    </group>
+    <group>
+        <item
+            android:id="@+id/menu_settings"
+            android:title="@string/name_settings"
+            app:showAsAction="never"/>
+    </group>
+</menu>

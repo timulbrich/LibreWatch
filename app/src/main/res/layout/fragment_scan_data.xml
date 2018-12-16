@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:layout_marginBottom="5sp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:layout_marginRight="5sp"
+            android:layout_marginLeft="5sp">
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/pb_timeline"
+                android:max="100"
+                android:layout_gravity="center" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_plot_title"
+                    android:text="date"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_glucose_prediction"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginLeft="5sp">
+
+        <TextView
+            android:id="@+id/tv_glucose_current_value"
+            android:text="000"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:layout_width="100sp"
+            android:layout_height="60sp"
+            android:layout_marginTop="-5sp" />
+
+        <ImageView
+            android:id="@+id/iv_glucose_prediction"
+            android:src="@drawable/arrow_flat"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="40sp"
+            android:layout_height="40sp"/>
+
+        <TextView
+            android:id="@+id/tv_glucose_prediction"
+            android:textColor="@android:color/black"
+            android:text="000"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:layout_width="100sp"
+            android:layout_height="60sp"
+            android:layout_marginTop="-5sp"
+            android:layout_marginRight="5sp"/>
+
+        <ImageView
+            android:id="@+id/iv_unit"
+            android:src="@drawable/ic_unit_mgdl"
+            android:layout_weight="0.1"
+            android:layout_width="40sp"
+            android:layout_height="60sp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

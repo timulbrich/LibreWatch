@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Blood sugar settings">
+
+        <CheckBoxPreference
+            android:id="@+id/pref_unit"
+            android:key="pref_glucose_unit_is_mmol"
+            android:title="@string/name_glucose_unit_is_mmoll"
+            android:summary="@string/pref_glucose_unit_is_mmol_summary"
+            android:defaultValue="false" />
+
+        <EditTextPreference
+            android:id="@+id/pref_max"
+            android:key="pref_glucose_target_max"
+            android:title="@string/name_glucose_target_max"
+            android:inputType="numberDecimal"/>
+
+        <EditTextPreference
+            android:id="@+id/pref_min"
+            android:key="pref_glucose_target_min"
+            android:title="@string/name_glucose_target_min"
+            android:inputType="numberDecimal"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="network settings">
+
+        <EditTextPreference
+            android:id="@+id/pref_username"
+            android:key="key_user_name"
+            android:title="@string/name_user_name"
+            android:inputType="text" />
+
+        <ListPreference
+            android:id="@+id/pref_role"
+            android:key="key_start_role"
+            android:title="@string/name_user_role"
+            android:entries="@array/roles"
+            android:entryValues="@array/roles"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

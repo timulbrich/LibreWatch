@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/webview">
+    </WebView>
+
+    <include
+        android:id="@+id/sapp_scan_data"
+        layout="@layout/fragment_scan_data"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_pat_sim_infobox"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="16sp"/>
+
+
+
+    <de.pbma.pma.sensorapp2.SensorApp.LimitAreaLineChart
+        android:id="@+id/sapp_cv_glucose_plot"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_height="wrap_content"
+        android:minHeight="200sp"
+        android:layout_marginBottom="15sp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:id="@+id/lv_caretaker_info"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_caretaker_warning"
+        android:background="@color/LightPink"
+        android:orientation="vertical"
+        android:minHeight="150sp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_caretaker_warning"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="50sp"
+            android:layout_marginBottom="10sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="50sp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_caretaker_emergeny_yes"
+                android:text="Take Care"
+                android:textAlignment="center"
+                android:layout_marginRight="20sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_caretaker_emergeny_no"
+                android:text="I can't"
+                android:textAlignment="center"
+                android:layout_marginLeft="20sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_simulator"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_margin="5sp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_simulator_readvalue"
+            android:textAlignment="center"
+            android:hint="value"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_simulator_predictvalue"
+            android:textAlignment="center"
+            android:hint="prediction"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_simulator"
+            android:textAlignment="center"
+            android:text="OK"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:id="@+id/sapp_tv_infobox"
+        android:lines="1"
+        android:maxLines="1"
+        android:layout_marginRight="5sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="15sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sapp_tv_connection_status"
+        android:background="@color/Red"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:textAlignment="center"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sapp_tv_connected_devices_title"
+        android:textSize="16sp"
+        android:text="@string/name_connected_devices"
+        android:layout_gravity="center"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:id="@+id/sapp_lv_connected_devices" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sapp_btn_screener"
+        android:text="Show Screener"
+        android:textAlignment="center"
+        android:layout_gravity="center" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sapp_btn_emergency_call"
+        android:text="@string/name_emergency_call"
+        android:textAlignment="center"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

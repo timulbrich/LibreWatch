@@ -1,0 +1,65 @@
+apply plugin: "com.android.application"
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "de.pbma.pma.sensorapp2"
+        minSdkVersion 16
+        targetSdkVersion 26
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/INDEX.LIST.txt'
+        exclude 'META-INF/index.list.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ["*.jar"], dir: "libs")
+    compile "com.github.PhilJay:MPAndroidChart:v3.0.2"
+    compile "com.android.support:appcompat-v7:26.1.0"
+    compile "com.android.support:design:26.1.0"
+    compile "com.android.support:support-v4:26.1.0"
+    compile "commons-io:commons-io:2.5"
+    compile "org.apache.commons:commons-math3:3.6.1"
+    compile "com.android.volley:volley:1.1.0"
+    compile "com.jayway.awaitility:awaitility:1.7.0"
+    compile 'eu.hgross:blaubot-android:2+'
+    compile 'eu.hgross:blaubot-websockets:2+'
+    implementation 'com.google.android.gms:play-services-wearable:16.0.1'
+
+}
+
+// include user specific build tasks
+if (file("user.gradle").exists()) {
+    apply from: "user.gradle" // this file should not be committed to git
+}
+repositories {
+    mavenCentral()
+}
